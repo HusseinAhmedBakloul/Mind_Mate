@@ -1,0 +1,95 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run --machine --start-paused -d 039bc2ba0405 --devtools-server-address http://127.0.0.1:9100/ --target D:\projects\projects\MindMate\lib\main.dart
+
+## exception
+
+OutOfMemoryError: Out of Memory
+
+```
+#0      new Uint8List (dart:typed_data-patch/typed_data_patch.dart:2307:3)
+#1      _File.readAsBytesSync (dart:io/file_impl.dart:589:16)
+#2      ForwardingFile.readAsBytesSync (package:file/src/forwarding/forwarding_file.dart:91:43)
+#3      ForwardingFile.readAsBytesSync (package:file/src/forwarding/forwarding_file.dart:91:43)
+#4      _calculateSha (package:flutter_tools/src/android/gradle.dart:926:32)
+#5      AndroidGradleBuilder.buildGradleApp (package:flutter_tools/src/android/gradle.dart:588:36)
+#6      _rootRunUnary (dart:async/zone.dart:1407:47)
+#7      _FutureListener.handleValue (dart:async/future_impl.dart:163:18)
+#8      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:861:45)
+#9      Future._propagateToListeners (dart:async/future_impl.dart:890:13)
+#10     Future._completeWithValue (dart:async/future_impl.dart:666:5)
+#11     Future._asyncCompleteWithValue.<anonymous closure> (dart:async/future_impl.dart:736:7)
+#12     _rootRun (dart:async/zone.dart:1399:13)
+#13     _CustomZone.run (dart:async/zone.dart:1301:19)
+#14     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#15     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1249:23)
+#16     _microtaskLoop (dart:async/schedule_microtask.dart:40:21)
+#17     _startMicrotaskLoop (dart:async/schedule_microtask.dart:49:5)
+#18     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:185:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 3.24.3, on Microsoft Windows [Version 10.0.19045.5131], locale ar-SA)
+    • Flutter version 3.24.3 on channel stable at D:\src\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision 2663184aa7 (10 weeks ago), 2024-09-11 16:27:48 -0500
+    • Engine revision 36335019a8
+    • Dart version 3.5.3
+    • DevTools version 2.37.3
+
+[✓] Windows Version (Installed version of Windows is version 10 or higher)
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 35.0.0)
+    • Android SDK at E:\Users\PC\AppData\Local\Android\Sdk
+    • Platform android-35, build-tools 35.0.0
+    • ANDROID_HOME = E:\Users\PC\AppData\Local\Android\Sdk
+    • ANDROID_SDK_ROOT = E:\Users\PC\AppData\Local\Android\Sdk
+    • Java binary at: C:\Program Files\Android\Android Studio1\jbr\bin\java
+    • Java version OpenJDK Runtime Environment (build 17.0.11+0--11852314)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[!] Visual Studio - develop Windows apps (Visual Studio Community 2022 17.9.2)
+    • Visual Studio at C:\Program Files\Microsoft Visual Studio\2022\Community
+    • Visual Studio Community 2022 version 17.9.34622.214
+    ✗ Visual Studio is missing necessary components. Please re-run the Visual Studio installer for the "Desktop development with C++" workload, and include these components:
+        MSVC v142 - VS 2019 C++ x64/x86 build tools
+         - If there are multiple build tool versions available, install the latest
+        C++ CMake tools for Windows
+        Windows 10 SDK
+
+[✓] Android Studio (version 2024.1)
+    • Android Studio at C:\Program Files\Android\Android Studio1
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 17.0.11+0--11852314)
+
+[!] Android Studio (version 2024.2)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    ✗ Unable to determine bundled Java version.
+    • Try updating or re-installing Android Studio.
+
+[✓] Connected device (4 available)
+    • M2003J15SC (mobile) • 039bc2ba0405 • android-arm64  • Android 10 (API 29)
+    • Windows (desktop)   • windows      • windows-x64    • Microsoft Windows [Version 10.0.19045.5131]
+    • Chrome (web)        • chrome       • web-javascript • Google Chrome 130.0.6723.119
+    • Edge (web)          • edge         • web-javascript • Microsoft Edge 122.0.2365.66
+
+[✓] Network resources
+    • All expected network resources are available.
+
+! Doctor found issues in 2 categories.
+```

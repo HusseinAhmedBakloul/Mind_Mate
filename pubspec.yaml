@@ -1,0 +1,97 @@
+name: MindMate
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  carousel_slider: ^5.0.0
+  cupertino_icons: ^1.0.8
+  animated_text_kit: ^4.2.2
+  fl_chart: ^0.69.0
+  intl: ^0.19.0
+  shared_preferences: ^2.3.2
+  audioplayers: ^6.1.0
+  cached_network_image: ^3.4.1
+  webview_flutter: ^4.9.0
+  http: ^1.2.2
+  translator: ^1.0.0
+  file_picker: ^8.1.2
+  flutter_secure_storage: ^9.2.2
+  google_generative_ai: ^0.4.6
+  image_picker: ^1.1.2
+  dio: ^5.7.0
+  provider: ^6.1.2
+  firebase_core: ^3.2.0
+  cloud_firestore: ^5.1.0
+  firebase_storage: ^12.1.1
+  firebase_auth: ^5.1.2
+  firebase_database: ^11.1.6
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - Images/Screenshot 2024-06-28 185545.png
+    - Images/Screenshot_2024-09-21_170359-removebg-preview.png
+    - Images/young-people-emotions_23-2148266763-removebg-preview.png
+    - Images/flat-design-go-further-illustration_23-2150085918-removebg-preview.png
+    - Images/cartoon-style-happy-youth-day-post-illustration_721117-860-removebg-preview.png
+    - Images/Screenshot_2024-09-21_183123-removebg-preview (1).png
+    - Images/Screenshot_2024-09-24_192659-removebg-preview.png
+    - Images/flat-design-schizophrenia-illustration_23-2149364625-removebg-preview.png
+    - Images/Screenshot_2024-09-25_173802-removebg-preview (1).png
+    - Images/maxresdefault.jpg
+    - assets/
+    - Images/p1.jpeg
+    - Images/p2.jpg
+    - Images/p3.jpeg
+    - Images/p4.jpeg
+    - Images/p5.jpeg
+    - Images/p6.jpeg
+    - Images/p7.jpeg
+    - Images/p8.jpeg
+    - Images/p9.jpeg
+    - Images/p10.jpg
+    - Images/p11.jpeg
+    - Images/p12.jpeg
+    - Images/p13.jpeg
+    - Images/p14.jpg
+    - Images/p15.jpeg
+    - Images/p16.jpg
+    - Images/p17.jpeg
+    - Images/p18.jpeg 
+    - Images/p19.jpeg
+    - Images/p20.jpeg
+    - Images/p21.jpeg
+    - Images/p22.jpeg
+    - Images/p23.jpeg
+    - Images/p24.jpeg
+    - Images/p25.jpeg
+    - Images/p26.jpeg
+
+  fonts:
+    - family: Amiri
+      fonts:
+        - asset: Font/Amiri/Amiri-Bold.ttf
+    - family: ReemKufiFun
+      fonts:
+        - asset: Font/Reem_Kufi_Fun/static/ReemKufiFun-Bold.ttf
+    - family: AmiriQuran
+      fonts:
+        - asset: Font/Amiri_Quran/AmiriQuran-Regular.ttf
+    - family: Jomhuria
+      fonts:
+        - asset: Font/Jomhuria/Jomhuria-Regular.ttf
