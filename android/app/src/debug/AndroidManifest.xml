@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- الأذونات المطلوبة -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="ai_market_analyst"
+        tools:replace="android:icon, android:label">
+        <!-- باقي إعدادات التطبيق، مثل الأنشطة وغيرها -->
+    </application>
+
+</manifest>
